@@ -6,7 +6,7 @@ from sklearn.preprocessing import MinMaxScaler
 import streamlit as st
 
 #Loading Saved Model
-model = load_model('C:\Z Drive\Data Science NED\BTC_PROJECT\BTC_PRICE_PREDICTION_Model.keras')
+model = load_model('BTC_Project/BTC_PRICE_PREDICTION_Model.keras')
 
 st.header('Bitcoin Price Prediction Model')
 st.subheader('Bitcoin Price Data')
@@ -64,4 +64,5 @@ for i in range(base_days, len(m)+future_days):
 st.subheader('Predicted Future Days Bitcoin Price')
 z = np.array(z)
 z = scaler.inverse_transform(z.reshape(-1,1))
+
 st.line_chart(z)
