@@ -15,7 +15,7 @@ st.set_page_config(
 
 st.header('💰 Bitcoin Price Prediction Model')
 st.subheader('Bitcoin Price Data')
-data = pd.DataFrame(yf.download('BTC-USD','2024-01-01','2026-01-10'))
+data = pd.DataFrame(yf.download('BTC-USD','2024-01-01','2026-01-28'))
 data = data.reset_index()
 st.write(data)
 
@@ -71,5 +71,6 @@ z = np.array(z)
 z = scaler.inverse_transform(z.reshape(-1,1))
 
 st.line_chart(z)
+
 
 
