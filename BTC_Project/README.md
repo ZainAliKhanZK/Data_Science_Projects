@@ -2,6 +2,10 @@
 
 A deep learning project that predicts Bitcoin (BTC-USD) closing prices using an LSTM neural network, with an interactive Streamlit app for visualizing historical data, model predictions, and future price forecasts.
 
+## 🌐 Live Demo
+
+👉 **[Try it here](https://bitcoinpred.streamlit.app/)**
+
 ## 🎯 Objective
 
 To train an LSTM-based time series model on historical Bitcoin price data and use it to predict both near-term test prices and future Bitcoin prices beyond the available data, with results visualized through a Streamlit web app.
